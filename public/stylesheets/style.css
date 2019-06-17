@@ -62,7 +62,7 @@ h1, p {
 	transition:         all 6s cubic-bezier(0,.99,.44,.99);	
 }
 
-#wheel div.sec{
+#wheel div.sec {
 	position: absolute;
 	width: 0;
 	height: 0;
@@ -91,6 +91,11 @@ h1, p {
 	-ms-transform: rotate(120deg);
 	border-color: #2980b9 transparent;	
 }
+
+#wheel div.sec:nth-child(2) i {
+	margin-left: -21px;
+}
+
 #wheel div.sec:nth-child(3){
 	transform: rotate(180deg);
 	-webkit-transform: rotate(180deg);
@@ -107,6 +112,11 @@ h1, p {
 	-ms-transform: rotate(240deg);
 	border-color: #f39c12 transparent;	
 }
+
+#wheel div.sec:nth-child(4) i {
+	margin-left: -8px;
+}
+
 #wheel div.sec:nth-child(5){
 	transform: rotate(300deg);
 	-webkit-transform: rotate(300deg);
@@ -115,6 +125,11 @@ h1, p {
 	-ms-transform: rotate(300deg);
 	border-color: #d35400 transparent;	
 }
+
+#wheel div.sec:nth-child(5) i {
+	margin-left: -19px;
+}
+
 #wheel div.sec:nth-child(6){
 	transform: rotate(360deg);
 	-webkit-transform: rotate(360deg);
