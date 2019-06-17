@@ -13,11 +13,11 @@ $(document).ready(function(){
     },
     'RIVERDALE' : {
       index : 2,
-      numMembers : 32
+      numMembers : 33
     },
     'LIBERTY' : {
       index : 3,
-      numMembers : 27
+      numMembers : 28
     },
     'KENSINGTON' : {
       index : 4,
