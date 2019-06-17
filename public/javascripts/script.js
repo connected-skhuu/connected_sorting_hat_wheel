@@ -1,10 +1,10 @@
-//set default degree (360*5)
 var degree = 7200;
-//number of clicks = 0
 var clicks = 0;
 
+/*
+ * Inspired from https://codepen.io/AndreCortellini/pen/vERwmL
+ */
 $(document).ready(function(){  
-  
   
   var HOUSE_DATA = {
     'BELLWOODS' : {
@@ -61,21 +61,15 @@ $(document).ready(function(){
 		//add 1 every click
 		clicks ++;
 		
-		/*multiply the degree by number of clicks
-	  generate random number between 1 - 360, 
-    then add to the new degree*/
-    var newDegree = degree*clicks;
+    var newDegree = degree * clicks;
     
-    //Factor in weighted bias0 - 1 + 1)) + 1;
     var selectedHouseName = getSelectedHouse();
+    //Need to select in reverse since the wheel technically moves 'backwards' + offset.
     var extraDegree =  360 - (HOUSE_DATA[selectedHouseName].index * 60) - Math.floor(Math.random() * (30 - 5 + 1)) + 30;
     HOUSE_DATA[selectedHouseName].numMembers++;
 
 		totalDegree = newDegree+extraDegree;
-		
-		/*let's make the spin btn to tilt every
-		time the edge of the section hits 
-		the indicator*/
+
 		$('#wheel .sec').each(function(){
 			var t = $(this);
 			var noY = 0;
@@ -90,7 +84,6 @@ $(document).ready(function(){
 					
 				var aoY = t.offset().top;
 				$("#txt").html(aoY);
-				// console.log(aoY);
 				
 				/*23.7 is the minumum offset number that 
 				each section can get, in a 30 angle degree.
