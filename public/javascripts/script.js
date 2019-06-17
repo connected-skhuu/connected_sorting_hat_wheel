@@ -65,7 +65,7 @@ $(document).ready(function(){
     
     var selectedHouseName = getSelectedHouse();
     //Need to select in reverse since the wheel technically moves 'backwards' + offset.
-    var extraDegree =  360 - (HOUSE_DATA[selectedHouseName].index * 60) - Math.floor(Math.random() * (30 - 5 + 1)) + 30;
+    var extraDegree =  360 - (HOUSE_DATA[selectedHouseName].index * 60) - Math.floor(Math.random() * (45 - 5 + 1)) + 30;
     HOUSE_DATA[selectedHouseName].numMembers++;
 
 		totalDegree = newDegree+extraDegree;
