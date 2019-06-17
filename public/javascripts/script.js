@@ -33,6 +33,8 @@ $(document).ready(function(){
     }
   }
 
+  var soundEffect = new Audio('./wheel.mp4');
+
   var getLowestHouseSet = function() {
     var lowestSet = ['RIVERDALE'];
 
@@ -69,6 +71,8 @@ $(document).ready(function(){
     HOUSE_DATA[selectedHouseName].numMembers++;
 
 		totalDegree = newDegree+extraDegree;
+
+    soundEffect.play();
 
 		$('#wheel .sec').each(function(){
 			var t = $(this);
