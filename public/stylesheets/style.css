@@ -14,13 +14,14 @@ a{
 
 h1, p {
   text-shadow: 2px 2px 1px #999;
+  text-align: center;
 }
 
 /*WRAPPER*/
 #wrapper{ 
-	margin: 40px auto 0;	
-	width:266px; 
-	position:relative;
+	margin: 50px auto 0;	
+	width: 266px; 
+	position: relative;
 }
 
 #txt{
@@ -37,7 +38,7 @@ h1, p {
 	overflow:hidden;
 	border:8px solid #fff;
 	box-shadow:rgba(0,0,0,0.2) 0px 0px 10px, rgba(0,0,0,0.05) 0px 3px 0px;
-	transform: rotate(0deg);
+	transform: rotate(0deg) scale(1.2);
 }
 
 #wheel:before{
@@ -163,9 +164,9 @@ h1, p {
 	content:"SPIN";	
 	text-align:center;
 	line-height:68px;
-	color:#CCC;
-	text-shadow: 0 2px 0 #fff, 0 -2px 0 rgba(0,0,0,0.3) ;
-	position: relative;
+	color:#404243;
+  position: relative;
+  font-weight: bold;
 	z-index: 100000;
 	width:68px;
 	height:68px;
