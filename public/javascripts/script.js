@@ -13,7 +13,7 @@ $(document).ready(function(){
     },
     'RIVERDALE' : {
       index : 2,
-      numMembers : 33
+      numMembers : 34
     },
     'LIBERTY' : {
       index : 3,
